@@ -1,0 +1,316 @@
+body {
+  font-family: "comic sans ms", sans-serif;
+  background-color: #B45A69;
+  color: #891C33  ;
+  width: 100%;
+}
+
+.header, .footer{
+  font-family: 'Times New Roman', Times, serif
+}
+
+.header {
+  background-color: #EFD2D6;
+  display: flex;
+}
+
+.keyword {
+  margin-top: 20px;
+  height: 25px;
+}
+
+.link {
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: 30px;
+}
+
+.link a {
+  margin-right: 5px;
+}
+
+.header img {
+  width: fit-content;
+  height: 300px;
+  margin-left: 20px;
+  align-items: center;
+}
+
+.slider {
+  box-sizing: border-box;
+  height: 350px;
+  margin-top: 30px;
+}
+
+/* Slideshow slider */
+.content-slide {
+  width: 48%;
+  height: fit-content;
+  position: relative;
+  margin: auto;
+}
+
+.imgslide {
+  display: none;
+}
+
+.slider img {
+  vertical-align: middle;
+  height: fit-content;
+  width: 100%;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  color: rgb(255, 254, 224);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: rgb(0, 0, 0);
+}
+
+.content-slide .numberslide {
+  color: #ffffff;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.slider .page {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.page .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: lightgrey;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  border-radius: 50%;
+}
+
+.page .active,
+.page .dot:hover {
+  background-color: #fcd0d9;
+}
+
+.isi {
+  min-height: 100%;
+  position: relative;
+}
+
+.body {
+  padding-bottom: 230px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  height: 230px;
+  width: 100%;
+  background-color: #EFD2D6 ;
+}
+
+.foot-gambar {
+  text-align: center;
+}
+
+.foot-gambar img {
+  margin-right: 10px;
+  margin-top: 90px;
+  width: 60px;
+  height: fit-content;
+}
+
+.teks {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 90px;
+}
+
+.teks p {
+  font-size: 20px;
+  display: inline;
+  margin-right: 20px;
+}
+
+.section-card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 20px;
+  column-gap: 20px;
+  width: 80px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  margin-left: 550px;
+}
+
+.card {
+  background-color: #f4a8b3;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  width: 250px;
+}
+
+.card__img {
+  width: 100%;
+  display: block;
+}
+
+.card__details {
+  padding: 10px 15px;
+}
+
+.pesan {
+  height: 35px;
+}
+
+@media screen and (max-width: 800px) {
+  .content-slide {
+    padding: 8px 50px 12px 50px;
+  }
+
+  .next {
+    right: 50px;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .header {
+    width: 100%;
+    display: block;
+  }
+
+  .header img {
+    width: 50%;
+    height: fit-content;
+    margin: 0 20%;
+  }
+  .link {
+    margin-top: 0;
+    padding-bottom: 10px;
+    font-size: 9px;
+    text-align: center;
+  }
+
+  .slider {
+    width: 100%;
+    height: 180px;
+  }
+
+  .slider img {
+    width: 80%;
+    height: fit-content;
+  }
+
+  .slider .page {
+    padding-top: 0;
+  }
+
+  .page .dot {
+    width: 5px;
+    height: 5px;
+  }
+
+  .prev,
+  .next {
+    padding: 5px;
+  }
+
+  .keyword {
+    width: 50%;
+  }
+
+  .foot-gambar img {
+    margin-top: 30px;
+    width: 30px;
+    height: fit-content;
+  }
+
+  .teks p {
+    font-size: 13px;
+  }
+
+  .teks {
+    height: 70px;
+  }
+
+  .body {
+    padding-bottom: 150px;
+  }
+
+  .footer {
+    height: 150px;
+  }
+
+  .card {
+    width: 120px;
+  }
+
+  .card__details h3 {
+    font-size: 12px;
+  }
+
+  .card__details p,
+  .card__details a {
+    font-size: 7px;
+  }
+
+  .card__details {
+    margin-left: 5px;
+    padding: 5px 3px;
+  }
+
+  .section-card {
+    margin-left: 5px;
+    row-gap: 5px;
+    column-gap: 5px;
+  }
+}
